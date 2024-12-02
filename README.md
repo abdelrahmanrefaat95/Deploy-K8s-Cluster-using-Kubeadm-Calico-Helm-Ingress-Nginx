@@ -157,8 +157,7 @@ Then
 
 9- **Install necessary software tools to continue / CP-W**
 
-`sudo apt-get install -y apt-transport-https ca-certificates curl \
-  gpg gnupg2 software-properties-common`
+`sudo apt-get install -y apt-transport-https ca-certificates curl gpg gnupg2 software-properties-common`
 
 
 10- **Install Kubernetes Tools & containerd Runtime**
@@ -254,7 +253,7 @@ systemctl status containerd
  *Paste The following"
 
  ```
- untime-endpoint: unix:///run/containerd/containerd.sock  
+runtime-endpoint: unix:///run/containerd/containerd.sock  
 image-endpoint: unix:///run/containerd/containerd.sock  
 timeout: 2  
 debug: false # <- if you don't want to see debug info you can set this to false  
